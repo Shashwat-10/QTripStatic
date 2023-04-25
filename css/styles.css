@@ -51,14 +51,24 @@ footer {
 .tile {
   /* TODO: MODULE_CARDS */
   /* 1. Fill in the required properties. */
+  height:100%;
+  width:100%;
+  position:relative;
+  border-radius: 10px;
+  overflow: hidden;
 }
 .tile img {
   /* TODO: MODULE_CARDS */
   /* 1. Fill in the required properties. */
+  height:100%;
+  width:100%;
+  transition:all 0.2s;
 }
 .tile img:hover {
   /* TODO: MODULE_CARDS */
   /* 1. Fill in the required properties. */
+  transform: scale(1.1);
+  filter:brightness(50%);
 }
 
 /* Hint: Notice the position:absolute and z-index properties. */
@@ -68,6 +78,13 @@ footer {
   z-index: 1;
   text-transform: uppercase;
   letter-spacing: 2px;
+
+  bottom:0;
+  left:0;
+  right:0;
+  /* text-align:center;
+  color:white; */
+
 }
 
 .hero-image {
@@ -76,7 +93,7 @@ footer {
     url("/assets/hero.jpg");
   background-position: center;
   background-size:cover;
-  height:40vh;
+  height:50vh;
   /* height:400px;
   margin : 10%;
   display: flex;
