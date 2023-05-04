@@ -161,13 +161,13 @@ footer {
 }
 .adventure-card-text {
   display: flex;
-  justify-content: space-between;
+  justify-content:space-between;
   text-align:center;
   position: relative;
   font-family:sans-serif;
   z-index: 1;
   letter-spacing: 2px;
-  top: 2rem;
+  top: 1.5rem;
   bottom:0;
   /* left:0;
   right:0; */
