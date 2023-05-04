@@ -40,8 +40,8 @@ footer {
 
 .content {
   padding: 20px 0px;
-  /* display: flex; */
-  /* flex-wrap: wrap; */
+  display: flex;
+  flex-wrap: wrap;
 }
 
 /* ================================== */
@@ -78,7 +78,7 @@ footer {
   z-index: 1;
   text-transform: uppercase;
   letter-spacing: 2px;
-
+  background-color: lightgray;
   bottom:0;
   left:0;
   right:0;
@@ -142,14 +142,26 @@ footer {
 .adventure-card {
   /* TODO: MODULE_ADVENTURES_GRID */
   /* 1. Fill in the required properties. */
+  height:100%;
+  width:100%;
+  position:relative;
+  border-radius: 10px;
+  overflow: hidden;
+
 }
 .adventure-card img {
   /* TODO: MODULE_ADVENTURES_GRID */
   /* 1. Fill in the required properties. */
+  height:80%;
+  width:100%;
+  transition:all 0.2s;
 }
 .adventure-card img:hover {
   /* TODO: MODULE_ADVENTURES_GRID */
   /* 1. Fill in the required properties. */
+  transform: scale(1);
+  filter:brightness(30%);
+
 }
 
 /* ================================== */
