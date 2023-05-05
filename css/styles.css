@@ -144,6 +144,7 @@ footer {
 .adventure-card {
   /* TODO: MODULE_ADVENTURES_GRID */
   /* 1. Fill in the required properties. */
+  display: flex;
   height: 100%;
   width:100%;
   position:relative;
@@ -160,11 +161,11 @@ footer {
   object-fit: cover;
 }
 
-.card-body{
+/* .card-body{
   display:flex;
   align-items: center;
   justify-content: space-between;
-}
+} */
 .explore{
   padding-top:2rem;
 }
