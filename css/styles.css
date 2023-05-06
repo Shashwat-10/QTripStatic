@@ -18,6 +18,7 @@ input:focus {
 a {
   color: inherit !important;
   text-decoration: none !important;
+  color: chocolate;
 }
 /* .navbar{
   background: #f1f1f1;
@@ -183,29 +184,49 @@ footer {
 /* Adventure details page CSS */
 /* ================================== */
 
-.adventure-detail-card {
+.adventure-detail-card span {
   /* TODO: MODULE_ADVENTURE_DETAILS */
   /* 1. Fill in the required properties. */
+ color:goldenrod;
 
 }
+
 
 .adventure-card-image {
   /* TODO: MODULE_ADVENTURE_DETAILS */
   /* 1. Fill in the required properties. */
+  transition:all 0.2s;
+  width:100%;
+  height: 100%;
+  object-fit: cover;
 }
 .adventure-card-image:hover {
   /* TODO: MODULE_ADVENTURE_DETAILS */
   /* 1. Fill in the required properties. */
+  transform: scale(1);
+  filter:brightness(70%);
 }
+
+.left-card{
+  padding: 1rem;
+}
+
+.right-card{
+  padding: 1rem;
+}
+
+
 .experience-content ul li {
   margin-left: 16px;
   padding: 0;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1280px) {
   /* For desktops phones: */
   #reservation {
     width: 400px;
     position: fixed;
+    overflow-y: auto;
+    right:2rem;
   }
 }
